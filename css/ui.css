@@ -7,8 +7,17 @@
 .right_align {
     text-align:right;
 }
+.container.full_width {
+    width: 100%;
+}
 #content.container {
     width: 100%;
+}
+a.left.carousel-control {
+    width: 30px;
+}
+a.right.carousel-control {
+    width: 30px;
 }
 .homepage-hero-module {
     border-right: none;
@@ -23,6 +32,27 @@
 .homepage-hero-module a:active,
 .homepage-hero-module a:visited {
     color: #fff;
+}
+a,
+a:visited {
+    color: #ccc;
+}
+a:hover,
+a:focus,
+a:active {
+    color: #fff;
+}
+a.icon,
+a.icon:visited {
+    color: #9f9f9f;
+}
+a.icon:hover,
+a.icon:focus,
+a.icon:active {
+    color: #5f5f5f;
+}
+#contact > .fa {
+    opacity: .5;
 }
 .grey_background {
     background: rgba(45, 45, 45, 0.8);
