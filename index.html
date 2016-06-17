@@ -80,7 +80,6 @@
             <div class="description">
                 <span class="nowrap">Songwriter | Guitarist</span>
             </div>
-            <br />
             <p class="lead">
                 <a href="#music" class="btn btn-lg scrollto">Listen</a>
             </p>
@@ -91,10 +90,10 @@
             </p>
         </div>
         <div class="filter"></div>
-        <video muted autoplay loop class="fillWidth">
-            <source src="video/MattBachman.webm" type="video/webm">
-            <source src="video/MattBachman.mp4" type="video/mp4">
-            <source src="video/MattBachman.ogv" type="video/ogg">
+        <video muted autoplay class="fillWidth" id="coverVideo">
+            <source src="video/mrbachmanmusic.webm" type="video/webm">
+            <source src="video/mrbachmanmusic.mp4" type="video/mp4">
+            <source src="video/mrbachmanmusic.ogv" type="video/ogg">
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <div class="poster landscape">
@@ -107,9 +106,9 @@
 </div>
 <div class="container" id="content">
     <!-- Example row of columns -->
-    <div class="row black_background solid" id="music">
+    <div class="row grey_background solid" id="music">
         <div class="col-md-12 center_align">
-            <h2>MUSIC</h2>
+            <h3>MUSIC</h3>
             <div class="container full_width">
                 <div id="musicCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
                     <!-- Indicators -->
@@ -122,13 +121,78 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <iframe width="450" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146133162&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4 center_align">
+                                        <img class="album-cover" src="img/kingbaby_large.jpg" />
+                                    </div>
+                                    <div class="col-md-8 left_align">
+                                        <h4>KINGBABY</h4>
+                                        <h5>Released 2005</h5>
+                                        <br />
+                                        “Sing Along” Co/wrote music, lead guitar
+                                        <br />
+                                        <audio controls preload="none">
+                                            <source src="music/sing_along.m4a" type="audio/mp4" />
+                                            <source src="music/sing_along.mp3" type="audio/mp3" />
+                                            <source src="music/sing_along.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>
+                                        <br />
+                                        "Rock’n’Roll High” Co/wrote music, lead guitar
+                                        <br />
+                                        <audio controls preload="none">
+                                            <source src="music/sing_along.m4a" type="audio/mp4" />
+                                            <source src="music/sing_along.mp3" type="audio/mp3" />
+                                            <source src="music/sing_along.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>
+                                        <br />
+                                        “Whole Lotta Easy”  Co/wrote music, lead guitar
+                                        <br />
+                                        <audio controls preload="none">
+                                            <source src="music/sing_along.m4a" type="audio/mp4" />
+                                            <source src="music/sing_along.mp3" type="audio/mp3" />
+                                            <source src="music/sing_along.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>
+                                        <br />
+                                        “Let It Out” Co/wrote music, lead guitar
+                                        <br />
+                                        <audio controls preload="none">
+                                            <source src="music/sing_along.m4a" type="audio/mp4" />
+                                            <source src="music/sing_along.mp3" type="audio/mp3" />
+                                            <source src="music/sing_along.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>
+                                        <br />
+                                        “Heaven’s Hanging” Co/wrote music, lead guitar
+                                        <br />
+                                        <audio controls preload="none">
+                                            <source src="music/sing_along.m4a" type="audio/mp4" />
+                                            <source src="music/sing_along.mp3" type="audio/mp3" />
+                                            <source src="music/sing_along.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="item">
-                            <iframe width="450" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146131413&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                            <audio controls preload="none" style="width:480px;">
+                                <source src="music/sing_along.m4a" type="audio/mp4" />
+                                <source src="music/sing_along.mp3" type="audio/mp3" />
+                                <source src="music/sing_along.ogg" type="audio/ogg" />
+                                <p>Your browser does not support HTML5 audio.</p>
+                            </audio>
                         </div>
                         <div class="item">
-                            <iframe width="450" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/119089417&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+                            <audio controls preload="none" style="width:480px;">
+                                <source src="music/sing_along.m4a" type="audio/mp4" />
+                                <source src="music/sing_along.mp3" type="audio/mp3" />
+                                <source src="music/sing_along.ogg" type="audio/ogg" />
+                                <p>Your browser does not support HTML5 audio.</p>
+                            </audio>
                         </div>
                     </div>
 
@@ -216,7 +280,7 @@
     </div>
     <div class="row grey_background solid" id="about">
         <div class="col-md-12 center_align">
-            <h2>ABOUT</h2>
+            <h3>ABOUT</h3>
         </div>
         <div class="col-md-6 center_align">
             picture
@@ -273,7 +337,7 @@
     <div class="row black_background solid" id="connect">
         <div class="container full_width">
             <div class="col-md-12 center_align">
-                <h2>CONNECT</h2>
+                <h3>CONNECT</h3>
                 <a href="http://www.facebook.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
                 <a href="http://www.twitter.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
                 <a href="http://www.instagram.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x"></i></span></a>
@@ -366,6 +430,15 @@
             scaleBannerVideoSize('.video-container video');
         });
 
+        var myVideo = document.getElementById('coverVideo');
+
+        function restartVideo(){
+            myVideo.load();
+           // myVideo.pause();
+        }
+
+        myVideo.addEventListener("ended", restartVideo, false);
+
     });
 
     /** Reusable Functions **/
@@ -420,6 +493,16 @@
         });
     }
 
+    document.addEventListener('play', function(e){
+        var audios = document.getElementsByTagName('audio');
+        for(var i = 0, len = audios.length; i < len;i++){
+            if(audios[i] != e.target){
+                audios[i].pause();
+            }
+        }
+    }, true);
+
 </script>
 </body>
 </html>
+
