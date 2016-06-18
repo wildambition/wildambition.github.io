@@ -90,7 +90,7 @@
             </p>
         </div>
         <div class="filter"></div>
-        <video muted autoplay class="fillWidth" id="coverVideo">
+        <video muted autoplay class="fillWidth" id="coverVideo" poster="">
             <source src="video/mrbachmanmusic.webm" type="video/webm">
             <source src="video/mrbachmanmusic.mp4" type="video/mp4">
             <source src="video/mrbachmanmusic.ogv" type="video/ogg">
@@ -431,13 +431,23 @@
         });
 
         var myVideo = document.getElementById('coverVideo');
-
-        function restartVideo(){
-            myVideo.load();
-           // myVideo.pause();
+        if (typeof myVideo.loop == 'boolean') { // loop supported
+            myVideo.loop = true;
+        } else { // loop property not supported
+            myVideo.on('ended', function () {
+                this.currentTime = 0;
+                this.play();
+            }, false);
         }
+        myVideo.play();
 
-        myVideo.addEventListener("ended", restartVideo, false);
+        //function playVideo(){
+            //myVideo.currentTime = 0.1;
+        //    myVideo.play();
+        //    myVideo.addEventListener("canplay",function() { myVideo.currentTime = 0.1;});
+        //}
+
+        //myVideo.addEventListener("ended", playVideo);
 
     });
 
