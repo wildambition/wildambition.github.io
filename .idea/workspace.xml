@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7643f1a9-209c-4f51-ac26-629a2a97eaae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/kingbaby_large.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ui.css" afterPath="$PROJECT_DIR$/css/ui.css" />
     </list>
     <ignored path="wildambition.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81161696">
-              <caret line="237" column="57" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.378882">
+              <caret line="158" column="46" selection-start-line="158" selection-start-column="46" selection-end-line="158" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -534,12 +532,12 @@
       <workItem from="1465507446279" duration="6000" />
       <workItem from="1465599848102" duration="6595000" />
       <workItem from="1466135153937" duration="525000" />
-      <workItem from="1466136475769" duration="4969000" />
+      <workItem from="1466136475769" duration="5272000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31822000" />
+    <option name="totallyTimeSpent" value="32125000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="322" y="26" width="1105" height="812" extended-state="0" />
@@ -785,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81161696">
-          <caret line="237" column="57" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.378882">
+          <caret line="158" column="46" selection-start-line="158" selection-start-column="46" selection-end-line="158" selection-end-column="46" />
           <folding />
         </state>
       </provider>
