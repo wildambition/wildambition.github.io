@@ -127,44 +127,19 @@
                                         <img class="album-cover" src="img/kingbaby_cover.jpg" />
                                     </div>
                                     <div class="col-md-8 left_align">
-                                        <h4>KINGBABY</h4>
-                                        <h5>Released 2005</h5>
-                                        <br />
-                                        “Sing Along” - cowrote music, lead guitar
-                                        <br />
-                                        <audio controls preload="none">
-                                            <source src="music/sing_along.m4a" type="audio/mp4" />
-                                            <source src="music/sing_along.mp3" type="audio/mp3" />
-                                            <source src="music/sing_along.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        "Rock’n’Roll High” - cowrote music, lead guitar
-                                        <br />
-                                        <audio controls preload="none">
-                                            <source src="music/rock-n-roll_high.m4a" type="audio/mp4" />
-                                            <source src="music/rock-n-roll_high.mp3" type="audio/mp3" />
-                                            <source src="music/rock-n-roll_high.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Whole Lotta Easy” - cowrote music, lead guitar
-                                        <br />
-                                        <audio controls preload="none">
-                                            <source src="music/whole_lotta_easy.m4a" type="audio/mp4" />
-                                            <source src="music/whole_lotta_easy.mp3" type="audio/mp3" />
-                                            <source src="music/whole_lotta_easy.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Heaven’s Hanging” - cowrote music, lead guitar
-                                        <br />
-                                        <audio controls preload="none">
-                                            <source src="music/heavens_hanging.m4a" type="audio/mp4" />
-                                            <source src="music/heavens_hanging.mp3" type="audio/mp3" />
-                                            <source src="music/heavens_hanging.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
+                                        <div id="audio_wrapper">
+                                            <h4>KINGBABY</h4>
+                                            <h5>Released 2005</h5>
+                                            <br />
+                                            <audio preload></audio>
+                                            <ol>
+                                                <li><a href="#" data-src="music/sing_along.mp3">“Sing Along” - cowrote music, lead guitar</a></li>
+                                                <li><a href="#" data-src="music/rock-n-roll_high.mp3">"Rock’n’Roll High” - cowrote music, lead guitar</a></li>
+                                                <li><a href="#" data-src="music/whole_lotta_easy.mp3">“Whole Lotta Easy” - cowrote music, lead guitar</a></li>
+                                                <li><a href="#" data-src="music/let_it_out.mp3">“Let it Out” - cowrote music, lead guitar</a></li>
+                                                <li><a href="#" data-src="music/heavens_hanging.mp3">“Heaven’s Hanging” - cowrote music, lead guitar</a></li>
+                                            </ol>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -179,10 +154,9 @@
                                         <h4>The Slowtime Mondays</h4>
                                         <h5>Released 2004</h5>
                                         <br />
-                                        “Next Big Thing” - lead guitar, second guitar
+                                        <!--“Next Big Thing” - lead guitar, second guitar
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/next_big_thing.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/next_big_thing.mp3" type="audio/mp3" />
                                             <source src="music/next_big_thing.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
@@ -190,8 +164,7 @@
                                         <br />
                                         "Signified” - lead guitar, second guitar
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/signified.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/signified.mp3" type="audio/mp3" />
                                             <source src="music/signified.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
@@ -199,8 +172,7 @@
                                         <br />
                                         “Know” - lead guitar, second guitar
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/know.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/know.mp3" type="audio/mp3" />
                                             <source src="music/know.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
@@ -208,12 +180,19 @@
                                         <br />
                                         “Alright” - second guitar
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/alright.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/alright.mp3" type="audio/mp3" />
                                             <source src="music/alright.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
                                         </audio>
+                                        <br />
+                                        “Destination Home” - second guitar
+                                        <br />
+                                        <audio controls preload="metadata">
+                                            <source src="music/destination_home.mp3" type="audio/mp3" />
+                                            <source src="music/destination_home.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>-->
                                     </div>
                                 </div>
                             </div>
@@ -228,10 +207,9 @@
                                         <h4>PilloHead</h4>
                                         <h5>Released 1997</h5>
                                         <br />
-                                        “Talken” - vocals, guitar, lyrics
+                                        <!--“Talken” - vocals, guitar, lyrics
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/talken.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/talken.mp3" type="audio/mp3" />
                                             <source src="music/talken.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
@@ -239,8 +217,7 @@
                                         <br />
                                         “Air Play” - vocals, guitar, lyrics
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/air_play.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/air_play.mp3" type="audio/mp3" />
                                             <source src="music/air_play.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
@@ -248,8 +225,7 @@
                                         <br />
                                         “Poets of the Nineties” - vocals, guitar, lyrics
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/poets_of_the_nineties.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/poets_of_the_nineties.mp3" type="audio/mp3" />
                                             <source src="music/poets_of_the_nineties.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
@@ -257,12 +233,19 @@
                                         <br />
                                         “Klown” - vocals, guitar, lyrics
                                         <br />
-                                        <audio controls preload="none">
-                                            <source src="music/klown.m4a" type="audio/mp4" />
+                                        <audio controls preload="metadata">
                                             <source src="music/klown.mp3" type="audio/mp3" />
                                             <source src="music/klown.ogg" type="audio/ogg" />
                                             <p>Your browser does not support HTML5 audio.</p>
                                         </audio>
+                                        <br />
+                                        “Moooy Grande” - vocals, guitar, lyrics
+                                        <br />
+                                        <audio controls preload="metadata">
+                                            <source src="music/mooy_grande.mp3" type="audio/mp3" />
+                                            <source src="music/mooy_grande.ogg" type="audio/ogg" />
+                                            <p>Your browser does not support HTML5 audio.</p>
+                                        </audio>-->
                                     </div>
                                 </div>
                             </div>
@@ -438,8 +421,57 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Audio JS player -->
+<script src="audiojs/audio.min.js"></script>
 
 <script type="text/javascript">
+
+    // initialize Audio JS
+    $(function() {
+        // Setup the player to autoplay the next track
+        var a = audiojs.createAll({
+            trackEnded: function() {
+                var next = $('#audio_wrapper ol li.playing').next();
+                if (!next.length) next = $('#audio_wrapper ol li').first();
+                next.addClass('playing').siblings().removeClass('playing');
+                audio.load($('a', next).attr('data-src'));
+                audio.play();
+            }
+        });
+
+        // Load in the first track
+        var audio = a[0];
+        first = $('#audio_wrapper ol a').attr('data-src');
+        $('#audio_wrapper ol li').first().addClass('playing');
+        audio.load(first);
+
+        // Load in a track on click
+        $('#audio_wrapper ol li').click(function(e) {
+            e.preventDefault();
+            $(this).addClass('playing').siblings().removeClass('playing');
+            audio.load($('a', this).attr('data-src'));
+            audio.play();
+        });
+        // Keyboard shortcuts
+        $(document).keydown(function(e) {
+            var unicode = e.charCode ? e.charCode : e.keyCode;
+            // right arrow
+            if (unicode == 39) {
+                var next = $('li.playing').next();
+                if (!next.length) next = $('#audio_wrapper ol li').first();
+                next.click();
+                // back arrow
+            } else if (unicode == 37) {
+                var prev = $('li.playing').prev();
+                if (!prev.length) prev = $('#audio_wrapper ol li').last();
+                prev.click();
+                // spacebar
+            } else if (unicode == 32) {
+                audio.playPause();
+            }
+        })
+    });
+
 
     // Add scrollspy to <body>
     //$('body').scrollspy({target: ".navbar", offset: 75});
@@ -576,14 +608,14 @@
         });
     }
 
-    document.addEventListener('play', function(e){
+    /*document.addEventListener('play', function(e){
         var audios = document.getElementsByTagName('audio');
         for(var i = 0, len = audios.length; i < len;i++){
             if(audios[i] != e.target){
                 audios[i].pause();
             }
         }
-    }, true);
+    }, true);*/
 
 </script>
 </body>
