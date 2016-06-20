@@ -219,11 +219,11 @@ a.icon:active {
     background-color: rgb(204, 204, 204);
     background-image: none;
 }
-#audio_wrapper {
+.audio_wrapper {
     width: 100%;
     margin-bottom: 30px;
 }
-#audio_wrapper ol {
+.audio_wrapper ol {
     padding: 0px;
     margin: 0px;
     list-style: decimal-leading-zero inside;
@@ -231,30 +231,30 @@ a.icon:active {
     width: 100%;
     border-top: none;
     font-size: 0.9em; }
-#audio_wrapper ol li {
+.audio_wrapper ol li {
     position: relative;
     margin: 0px;
     padding: 9px 2px 10px;
     border-bottom: 1px solid #555;
     cursor: pointer;
 }
-#audio_wrapper ol li a {
+.audio_wrapper ol li a {
     display: block;
     text-indent: -3.3ex;
     padding: 0px 0px 0px 20px;
 }
-#audio_wrapper ol li a:hover,
-#audio_wrapper ol li a:focus,
-#audio_wrapper ol li a:active {
+.audio_wrapper ol li a:hover,
+.audio_wrapper ol li a:focus,
+.audio_wrapper ol li a:active {
     text-decoration: none;
 }
-#audio_wrapper ol li.playing {
+.audio_wrapper ol li.playing {
     color: #ccc;
 }
-#audio_wrapper ol li.playing a {
+.audio_wrapper ol li.playing a {
     color: #fff;
 }
-#audio_wrapper ol li.playing:before {
+.audio_wrapper ol li.playing:before {
     content: '♬';
     width: 14px;
     height: 14px;

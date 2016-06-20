@@ -127,12 +127,12 @@
                                         <img class="album-cover" src="img/kingbaby_cover.jpg" />
                                     </div>
                                     <div class="col-md-8 left_align">
-                                        <div id="audio_wrapper">
+                                        <div class="audio_wrapper">
                                             <h4>KINGBABY</h4>
                                             <h5>Released 2005</h5>
                                             <br />
                                             <audio preload></audio>
-                                            <ol>
+                                            <ol id="audio_wrapper0">
                                                 <li><a href="#" data-src="music/sing_along.mp3">“Sing Along” - cowrote music, lead guitar</a></li>
                                                 <li><a href="#" data-src="music/rock-n-roll_high.mp3">"Rock’n’Roll High” - cowrote music, lead guitar</a></li>
                                                 <li><a href="#" data-src="music/whole_lotta_easy.mp3">“Whole Lotta Easy” - cowrote music, lead guitar</a></li>
@@ -151,9 +151,19 @@
                                         <img class="album-cover" src="img/theslowtimemondays_cover.jpg" />
                                     </div>
                                     <div class="col-md-8 left_align">
-                                        <h4>The Slowtime Mondays</h4>
-                                        <h5>Released 2004</h5>
-                                        <br />
+                                        <div id="audio_wrapper2" class="audio_wrapper">
+                                            <h4>The Slowtime Mondays</h4>
+                                            <h5>Released 2004</h5>
+                                            <br />
+                                            <audio preload></audio>
+                                            <ol id="audio_wrapper1">
+                                                <li><a href="#" data-src="music/next_big_thing.mp3">“Next Big Thing” - lead guitar, second guitar</a></li>
+                                                <li><a href="#" data-src="music/signified.mp3">"Signified” - lead guitar, second guitar</a></li>
+                                                <li><a href="#" data-src="music/know.mp3">“Know” - lead guitar, second guitar</a></li>
+                                                <li><a href="#" data-src="music/alright.mp3">“Alright” - second guitar</a></li>
+                                                <li><a href="#" data-src="music/destination_home.mp3">“Destination Home” - second guitar</a></li>
+                                            </ol>
+                                        </div>
                                         <!--“Next Big Thing” - lead guitar, second guitar
                                         <br />
                                         <audio controls preload="metadata">
@@ -204,9 +214,19 @@
                                         <img class="album-cover" src="img/pillohead_cover.jpg" />
                                     </div>
                                     <div class="col-md-8 left_align">
-                                        <h4>PilloHead</h4>
-                                        <h5>Released 1997</h5>
-                                        <br />
+                                        <div id="audio_wrapper3" class="audio_wrapper">
+                                            <h4>PilloHead</h4>
+                                            <h5>Released 1997</h5>
+                                            <br />
+                                            <audio preload></audio>
+                                            <ol id="audio_wrapper2">
+                                                <li><a href="#" data-src="music/talken.mp3">“Talken” - vocals, guitar, lyrics</a></li>
+                                                <li><a href="#" data-src="music/air_play.mp3">“Air Play” - vocals, guitar, lyrics</a></li>
+                                                <li><a href="#" data-src="music/poets_of_the_nineties.mp3">“Poets of the Nineties” - vocals, guitar, lyrics</a></li>
+                                                <li><a href="#" data-src="music/klown.mp3">“Klown” - vocals, guitar, lyrics</a></li>
+                                                <li><a href="#" data-src="music/mooy_grande.mp3">“Moooy Grande” - vocals, guitar, lyrics</a></li>
+                                            </ol>
+                                        </div>
                                         <!--“Talken” - vocals, guitar, lyrics
                                         <br />
                                         <audio controls preload="metadata">
@@ -431,47 +451,54 @@
         // Setup the player to autoplay the next track
         var a = audiojs.createAll({
             trackEnded: function() {
-                var next = $('#audio_wrapper ol li.playing').next();
-                if (!next.length) next = $('#audio_wrapper ol li').first();
-                next.addClass('playing').siblings().removeClass('playing');
+                var next = $('ol li.playing').next();
+                if (!next.length) next = $('ol.album li').first();
+                $('ol li').removeClass('playing');
+                next.addClass('playing');//.siblings().removeClass('playing');
                 audio.load($('a', next).attr('data-src'));
                 audio.play();
             }
         });
 
         // Load in the first track
-        var audio = a[0];
-        first = $('#audio_wrapper ol a').attr('data-src');
-        $('#audio_wrapper ol li').first().addClass('playing');
-        audio.load(first);
+        for (i = 0; i < a.length; i++) {
+            var audio = a[i];
+            first = $('ol#audio_wrapper' + i + ' a').attr('data-src');
+            $('ol#audio_wrapper' + i).first().addClass('album');
+            $('ol#audio_wrapper' + i + ' li').first().addClass('playing');
+            audio.load(first);
 
-        // Load in a track on click
-        $('#audio_wrapper ol li').click(function(e) {
-            e.preventDefault();
-            $(this).addClass('playing').siblings().removeClass('playing');
-            audio.load($('a', this).attr('data-src'));
-            audio.play();
-        });
-        // Keyboard shortcuts
-        $(document).keydown(function(e) {
-            var unicode = e.charCode ? e.charCode : e.keyCode;
-            // right arrow
-            if (unicode == 39) {
-                var next = $('li.playing').next();
-                if (!next.length) next = $('#audio_wrapper ol li').first();
-                next.click();
-                // back arrow
-            } else if (unicode == 37) {
-                var prev = $('li.playing').prev();
-                if (!prev.length) prev = $('#audio_wrapper ol li').last();
-                prev.click();
-                // spacebar
-            } else if (unicode == 32) {
-                audio.playPause();
-            }
-        })
+            // Load in a track on click
+            $('ol#audio_wrapper' + i + ' li').click(function (e) {
+                e.preventDefault();
+                $('ol#audio_wrapper' + i).removeClass('album');
+                $(this).parent().addClass('album');
+                $('ol li').removeClass('playing');
+                $(this).addClass('playing');//.siblings().removeClass('playing');
+                audio.load($('a', this).attr('data-src'));
+                audio.play();
+            });
+
+            // Keyboard shortcuts
+            $(document).keydown(function (e) {
+                var unicode = e.charCode ? e.charCode : e.keyCode;
+                // right arrow
+                if (unicode == 39) {
+                    var next = $('li.playing').next();
+                    if (!next.length) next = $('ol#audio_wrapper' + i +'.album li').first();
+                    next.click();
+                    // back arrow
+                } else if (unicode == 37) {
+                    var prev = $('li.playing').prev();
+                    if (!prev.length) prev = $('ol#audio_wrapper' + i + '.album li').last();
+                    prev.click();
+                    // spacebar
+                } else if (unicode == 32) {
+                    audio.playPause();
+                }
+            })
+        }
     });
-
 
     // Add scrollspy to <body>
     //$('body').scrollspy({target: ".navbar", offset: 75});
@@ -519,7 +546,7 @@
     /** Document Ready Functions **/
     /********************************************************************/
 
-    $( document ).ready(function() {
+    $(document).ready(function() {
 
         // Resive video
         scaleVideoContainer();
