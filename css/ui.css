@@ -252,7 +252,7 @@ a.icon:active {
     color: #ccc;
 }
 #audio_wrapper ol li.playing a {
-    color: #ccc;
+    color: #fff;
 }
 #audio_wrapper ol li.playing:before {
     content: '♬';
@@ -264,8 +264,8 @@ a.icon:active {
     position: absolute;
     left: -24px;
     top: 9px;
-    color: #000;
-    font-size: 13px;
+    color: #fff;
+    font-size: 16px;
 }
 
 @media only screen and (min-width: 769px) {

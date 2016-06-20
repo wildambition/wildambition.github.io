@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7643f1a9-209c-4f51-ac26-629a2a97eaae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ui.css" afterPath="$PROJECT_DIR$/css/ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wildambition.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,8 +39,8 @@
       <file leaf-file-name="ui.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/ui.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8190328">
-              <caret line="222" column="15" selection-start-line="222" selection-start-column="15" selection-end-line="222" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.35569423">
+              <caret line="254" column="15" selection-start-line="254" selection-start-column="15" selection-end-line="254" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -104,8 +104,8 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="234" />
-    <option name="y" value="56" />
+    <option name="x" value="317" />
+    <option name="y" value="103" />
     <option name="width" value="1133" />
     <option name="height" value="812" />
   </component>
@@ -533,15 +533,15 @@
       <workItem from="1465507446279" duration="6000" />
       <workItem from="1465599848102" duration="6595000" />
       <workItem from="1466135153937" duration="525000" />
-      <workItem from="1466136475769" duration="11622000" />
+      <workItem from="1466136475769" duration="11952000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38475000" />
+    <option name="totallyTimeSpent" value="38805000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="234" y="56" width="1133" height="812" extended-state="0" />
+    <frame x="317" y="103" width="1133" height="812" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -784,8 +784,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/ui.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8190328">
-          <caret line="222" column="15" selection-start-line="222" selection-start-column="15" selection-end-line="222" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.35569423">
+          <caret line="254" column="15" selection-start-line="254" selection-start-column="15" selection-end-line="254" selection-end-column="15" />
           <folding />
         </state>
       </provider>
