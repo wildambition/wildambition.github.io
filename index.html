@@ -151,7 +151,7 @@
                                         <img class="album-cover" src="img/theslowtimemondays_cover.jpg" />
                                     </div>
                                     <div class="col-md-8 left_align">
-                                        <div id="audio_wrapper2" class="audio_wrapper">
+                                        <div class="audio_wrapper">
                                             <h4>The Slowtime Mondays</h4>
                                             <h5>Released 2004</h5>
                                             <br />
@@ -214,7 +214,7 @@
                                         <img class="album-cover" src="img/pillohead_cover.jpg" />
                                     </div>
                                     <div class="col-md-8 left_align">
-                                        <div id="audio_wrapper3" class="audio_wrapper">
+                                        <div class="audio_wrapper">
                                             <h4>PilloHead</h4>
                                             <h5>Released 1997</h5>
                                             <br />
@@ -224,7 +224,7 @@
                                                 <li><a href="#" data-src="music/air_play.mp3">“Air Play” - vocals, guitar, lyrics</a></li>
                                                 <li><a href="#" data-src="music/poets_of_the_nineties.mp3">“Poets of the Nineties” - vocals, guitar, lyrics</a></li>
                                                 <li><a href="#" data-src="music/klown.mp3">“Klown” - vocals, guitar, lyrics</a></li>
-                                                <li><a href="#" data-src="music/mooy_grande.mp3">“Moooy Grande” - vocals, guitar, lyrics</a></li>
+                                                <li><a href="#" data-src="music/mooy_grande.mp3">“Mooy Grande” - vocals, guitar, lyrics</a></li>
                                             </ol>
                                         </div>
                                         <!--“Talken” - vocals, guitar, lyrics
@@ -451,7 +451,7 @@
         // Setup the player to autoplay the next track
         var a = audiojs.createAll({
             trackEnded: function() {
-                var next = $('ol li.playing').next();
+                var next = $('ol.album li.playing').next();
                 if (!next.length) next = $('ol.album li').first();
                 $('ol li').removeClass('playing');
                 next.addClass('playing');//.siblings().removeClass('playing');
@@ -461,22 +461,44 @@
         });
 
         // Load in the first track
-        for (i = 0; i < a.length; i++) {
+        for (var i = 0; i < a.length; i++) {
             var audio = a[i];
-            first = $('ol#audio_wrapper' + i + ' a').attr('data-src');
-            $('ol#audio_wrapper' + i).first().addClass('album');
-            $('ol#audio_wrapper' + i + ' li').first().addClass('playing');
-            audio.load(first);
+            if (i == 0) {
+                $('ol#audio_wrapper' + i).first().addClass('album');
+            }
+            var first = $('ol#audio_wrapper' + i + ' li').first();
+            first.addClass('playing');
+            audio.load($('a', first).attr('data-src'));
 
             // Load in a track on click
-            $('ol#audio_wrapper' + i + ' li').click(function (e) {
+            $('ol#audio_wrapper' + i + ' li').click({allPlayers: a, currentPlayer: i}, function (e) {
                 e.preventDefault();
-                $('ol#audio_wrapper' + i).removeClass('album');
+                $('ol').removeClass('album');
                 $(this).parent().addClass('album');
-                $('ol li').removeClass('playing');
-                $(this).addClass('playing');//.siblings().removeClass('playing');
-                audio.load($('a', this).attr('data-src'));
-                audio.play();
+                $('ol.album li').removeClass('playing');
+                $(this).addClass('playing');
+                for (var x = 0; x < e.data.allPlayers.length; x++) {
+                    if (x != i) {
+                        var otherAudioPlayer = a[x];
+                        otherAudioPlayer.pause();
+                    }
+                }
+                var thisAudioPlayer = a[e.data.currentPlayer];
+                thisAudioPlayer.load($('a', this).attr('data-src'));
+                thisAudioPlayer.play();
+            });
+
+            // Stop other audio players on click
+            $('div#audiojs_wrapper' + i + ' div.play-pause p.play').click({allPlayers: a, currentPlayer: i}, function (e) {
+                e.preventDefault();
+                $('ol').removeClass('album');
+                $('ol#audio_wrapper' + e.data.currentPlayer).addClass('album');
+                for (var x = 0; x < e.data.allPlayers.length; x++) {
+                    if (x != i) {
+                        var otherAudioPlayer = a[x];
+                        otherAudioPlayer.pause();
+                    }
+                }
             });
 
             // Keyboard shortcuts
@@ -484,15 +506,15 @@
                 var unicode = e.charCode ? e.charCode : e.keyCode;
                 // right arrow
                 if (unicode == 39) {
-                    var next = $('li.playing').next();
-                    if (!next.length) next = $('ol#audio_wrapper' + i +'.album li').first();
+                    var next = $('ol.album li.playing').next();
+                    if (!next.length) next = $('ol.album li').first();
                     next.click();
-                    // back arrow
+                // back arrow
                 } else if (unicode == 37) {
-                    var prev = $('li.playing').prev();
-                    if (!prev.length) prev = $('ol#audio_wrapper' + i + '.album li').last();
+                    var prev = $('ol.album li.playing').prev();
+                    if (!prev.length) prev = $('ol.album li').last();
                     prev.click();
-                    // spacebar
+                // spacebar
                 } else if (unicode == 32) {
                     audio.playPause();
                 }
@@ -611,8 +633,6 @@
                 windowHeight = $(window).height(),
                 videoWidth,
                 videoHeight;
-
-        console.log(windowHeight);
 
         $(element).each(function(){
             var videoAspectRatio = $(this).data('height')/$(this).data('width'),
