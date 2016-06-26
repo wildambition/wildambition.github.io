@@ -41,60 +41,32 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-inverse" data-spy="affix" data-offet-bottom="0">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#home">Home</a></li>
-                <li class="active"><a href="#music">Music</a></li>
-                <li class="active"><a href="#photos">Photos</a></li>
-                <li class="active"><a href="#about">About</a></li>
-                <li class="active"><a href="#contact">Contact</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-
-<!--<div class="navbar navbar-inverse" data-spy="affix" data-offset-bottom="0" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"></a>
-        </div>
-        <div class="navbar-collapse collapse" id="menu">
-            <ul class="nav navbar-nav pull-right">
-                <li class="active"><a href="#home">Home</a>
-                </li>
-                <li class="active"><a href="#music">Music</a>
-                </li>
-                <li class="active"><a href="#photos">Photos</a>
-                </li>
-                <li class="active"><a href="#about">About</a>
-                </li>
-                <li class="active"><a href="#contact">Connect</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div> -->
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="homepage-hero-module" id="home">
+    <nav class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li class="active"><a href="#music">Music</a></li>
+                    <li class="active"><a href="#photos">Photos</a></li>
+                    <li class="active"><a href="#about">About</a></li>
+                    <li class="active"><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
     <div class="video-container">
         <div class="title-container">
             <div class="headline">
@@ -107,28 +79,26 @@
                 <a href="http://www.facebook.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-facebook fa-lg"></i></a>
                 <a href="http://www.twitter.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-twitter fa-lg"></i></a>
                 <a href="http://www.instagram.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-instagram fa-lg"></i></a>
-                <a href="http://www.youtube.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-youtube-play fa-lg"></i></a>
+                <!--<a href="http://www.youtube.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-youtube-play fa-lg"></i></a>-->
                 <!--<a href="#music" class="btn btn-lg scrollto">Listen</a>-->
             </div>
-            <div class="down_arrow">
+            <!--<div class="down_arrow">
                 <a href="#music" class="scrollto">
                     <img src="img/down_arrow.png" class="arrow" width="30" />
                 </a>
-            </div>
+            </div>-->
         </div>
         <div class="filter"></div>
         <video muted autoplay class="fillWidth" id="coverVideo" poster="">
             <source src="video/mrbachmanmusic.webm" type="video/webm">
             <source src="video/mrbachmanmusic.mp4" type="video/mp4">
             <source src="video/mrbachmanmusic.ogv" type="video/ogg">
+            <div class="poster" id="coverImage">
+                <img src="img/landscape_1.jpg" alt="">
+            </div>
             Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
-        <div class="poster landscape">
-            <img src="img/landscape_1.jpg" alt="">
-        </div>
-        <div class="poster portrait">
-            <img src="img/portrait_1.jpg" alt="">
-        </div>
+
     </div>
 </div>
 <div class="container" id="content">
@@ -191,45 +161,6 @@
                                                 <li><a href="#" data-src="music/destination_home.mp3">“Destination Home” - second guitar</a></li>
                                             </ol>
                                         </div>
-                                        <!--“Next Big Thing” - lead guitar, second guitar
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/next_big_thing.mp3" type="audio/mp3" />
-                                            <source src="music/next_big_thing.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        "Signified” - lead guitar, second guitar
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/signified.mp3" type="audio/mp3" />
-                                            <source src="music/signified.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Know” - lead guitar, second guitar
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/know.mp3" type="audio/mp3" />
-                                            <source src="music/know.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Alright” - second guitar
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/alright.mp3" type="audio/mp3" />
-                                            <source src="music/alright.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Destination Home” - second guitar
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/destination_home.mp3" type="audio/mp3" />
-                                            <source src="music/destination_home.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>-->
                                     </div>
                                 </div>
                             </div>
@@ -254,45 +185,6 @@
                                                 <li><a href="#" data-src="music/mooy_grande.mp3">“Mooy Grande” - vocals, guitar, lyrics</a></li>
                                             </ol>
                                         </div>
-                                        <!--“Talken” - vocals, guitar, lyrics
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/talken.mp3" type="audio/mp3" />
-                                            <source src="music/talken.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Air Play” - vocals, guitar, lyrics
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/air_play.mp3" type="audio/mp3" />
-                                            <source src="music/air_play.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Poets of the Nineties” - vocals, guitar, lyrics
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/poets_of_the_nineties.mp3" type="audio/mp3" />
-                                            <source src="music/poets_of_the_nineties.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Klown” - vocals, guitar, lyrics
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/klown.mp3" type="audio/mp3" />
-                                            <source src="music/klown.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>
-                                        <br />
-                                        “Moooy Grande” - vocals, guitar, lyrics
-                                        <br />
-                                        <audio controls preload="metadata">
-                                            <source src="music/mooy_grande.mp3" type="audio/mp3" />
-                                            <source src="music/mooy_grande.ogg" type="audio/ogg" />
-                                            <p>Your browser does not support HTML5 audio.</p>
-                                        </audio>-->
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +352,8 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -470,129 +363,146 @@
 
 <script type="text/javascript">
 
-    // initialize Audio JS
-    $(function() {
-        // Setup the player to autoplay the next track
-        var a = audiojs.createAll({
-            trackEnded: function() {
-                var next = $('ol.album li.playing').next();
-                if (!next.length) next = $('ol.album li').first();
-                $('ol li').removeClass('playing');
-                next.addClass('playing');//.siblings().removeClass('playing');
-                audio.load($('a', next).attr('data-src'));
-                audio.play();
-            }
-        });
 
-        // Load in the first track
-        for (var i = 0; i < a.length; i++) {
-            var audio = a[i];
-            if (i == 0) {
-                $('ol#audio_wrapper' + i).first().addClass('album');
-            }
-            var first = $('ol#audio_wrapper' + i + ' li').first();
-            first.addClass('playing');
-            audio.load($('a', first).attr('data-src'));
-
-            // Load in a track on click
-            $('ol#audio_wrapper' + i + ' li').click({allPlayers: a, currentPlayer: i}, function (e) {
-                e.preventDefault();
-                $('ol').removeClass('album');
-                $(this).parent().addClass('album');
-                $('ol.album li').removeClass('playing');
-                $(this).addClass('playing');
-                for (var x = 0; x < e.data.allPlayers.length; x++) {
-                    if (x != i) {
-                        var otherAudioPlayer = a[x];
-                        otherAudioPlayer.pause();
-                    }
-                }
-                var thisAudioPlayer = a[e.data.currentPlayer];
-                thisAudioPlayer.load($('a', this).attr('data-src'));
-                thisAudioPlayer.play();
-            });
-
-            // Stop other audio players on click
-            $('div#audiojs_wrapper' + i + ' div.play-pause p.play').click({allPlayers: a, currentPlayer: i}, function (e) {
-                e.preventDefault();
-                $('ol').removeClass('album');
-                $('ol#audio_wrapper' + e.data.currentPlayer).addClass('album');
-                for (var x = 0; x < e.data.allPlayers.length; x++) {
-                    if (x != i) {
-                        var otherAudioPlayer = a[x];
-                        otherAudioPlayer.pause();
-                    }
-                }
-            });
-
-            // Keyboard shortcuts
-            $(document).keydown(function (e) {
-                var unicode = e.charCode ? e.charCode : e.keyCode;
-                // right arrow
-                if (unicode == 39) {
-                    var next = $('ol.album li.playing').next();
-                    if (!next.length) next = $('ol.album li').first();
-                    next.click();
-                // back arrow
-                } else if (unicode == 37) {
-                    var prev = $('ol.album li.playing').prev();
-                    if (!prev.length) prev = $('ol.album li').last();
-                    prev.click();
-                // spacebar
-                } else if (unicode == 32) {
-                    audio.playPause();
-                }
-            })
-        }
-    });
-
-    // Add scrollspy to <body>
-    //$('body').scrollspy({target: ".navbar", offset: 75});
-
-    // Add smooth scrolling to all links inside a navbar
-    $("nav a").on('click', function(event){
-
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash (#)
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top -50
-        }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-        });
-    });
-
-    // Add smooth scrolling to all links inside a home page
-    $("#home a").on('click', function(event){
-
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash (#)
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top -50
-        }, 800, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-        });
-    });
 
     /** Document Ready Functions **/
     /********************************************************************/
 
     $(document).ready(function() {
+
+        // initialize Audio JS
+        $(function() {
+            // Setup the player to autoplay the next track
+            var a = audiojs.createAll({
+                trackEnded: function() {
+                    var next = $('ol.album li.playing').next();
+                    if (!next.length) next = $('ol.album li').first();
+                    $('ol li').removeClass('playing');
+                    next.addClass('playing');//.siblings().removeClass('playing');
+                    audio.load($('a', next).attr('data-src'));
+                    audio.play();
+                }
+            });
+
+            // Load in the first track
+            for (var i = 0; i < a.length; i++) {
+                var audio = a[i];
+                if (i == 0) {
+                    $('ol#audio_wrapper' + i).first().addClass('album');
+                }
+                var first = $('ol#audio_wrapper' + i + ' li').first();
+                first.addClass('playing');
+                audio.load($('a', first).attr('data-src'));
+
+                // Load in a track on click
+                $('ol#audio_wrapper' + i + ' li').click({allPlayers: a, currentPlayer: i}, function (e) {
+                    e.preventDefault();
+                    $('ol').removeClass('album');
+                    $(this).parent().addClass('album');
+                    $('ol.album li').removeClass('playing');
+                    $(this).addClass('playing');
+                    for (var x = 0; x < e.data.allPlayers.length; x++) {
+                        if (x != i) {
+                            var otherAudioPlayer = a[x];
+                            otherAudioPlayer.pause();
+                        }
+                    }
+                    var thisAudioPlayer = a[e.data.currentPlayer];
+                    thisAudioPlayer.load($('a', this).attr('data-src'));
+                    thisAudioPlayer.play();
+                });
+
+                // Stop other audio players on click
+                $('div#audiojs_wrapper' + i + ' div.play-pause p.play').click({allPlayers: a, currentPlayer: i}, function (e) {
+                    e.preventDefault();
+                    $('ol').removeClass('album');
+                    $('ol#audio_wrapper' + e.data.currentPlayer).addClass('album');
+                    for (var x = 0; x < e.data.allPlayers.length; x++) {
+                        if (x != i) {
+                            var otherAudioPlayer = a[x];
+                            otherAudioPlayer.pause();
+                        }
+                    }
+                });
+
+                // Keyboard shortcuts
+                $(document).keydown(function (e) {
+                    var unicode = e.charCode ? e.charCode : e.keyCode;
+                    // right arrow
+                    if (unicode == 39) {
+                        var next = $('ol.album li.playing').next();
+                        if (!next.length) next = $('ol.album li').first();
+                        next.click();
+                        // back arrow
+                    } else if (unicode == 37) {
+                        var prev = $('ol.album li.playing').prev();
+                        if (!prev.length) prev = $('ol.album li').last();
+                        prev.click();
+                        // spacebar
+                    } else if (unicode == 32) {
+                        audio.playPause();
+                    }
+                })
+            }
+        });
+
+
+        // Add scrollspy to <body>
+        //$('body').scrollspy({target: ".navbar", offset: 75});
+
+        // Add smooth scrolling to all links inside a navbar
+        $("nav a").on('click', function(event){
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash (#)
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top -50
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        });
+
+        // Add smooth scrolling to all links inside a home page
+        /*$("#home a").on('click', function(event){
+
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash (#)
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top -50
+            }, 800, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+        });*/
+
+        /*$(window).bind('scroll', function() {
+            var navHeight = $( window ).height() - 50;
+            if ($(window).scrollTop() > navHeight) {
+                $('nav').addClass('fixed');
+            }
+            else {
+                $('nav').removeClass('fixed');
+            }
+        });*/
+
+        $("nav").find("li").on("click", "a", function () {
+            $('.navbar-collapse.in').collapse('hide');
+        });
 
         // Resive video
         scaleVideoContainer();
@@ -609,6 +519,7 @@
         });
 
         var myVideo = document.getElementById('coverVideo');
+
         if (typeof myVideo.loop == 'boolean') { // loop supported
             myVideo.loop = true;
         } else { // loop property not supported
