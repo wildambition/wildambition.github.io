@@ -333,10 +333,24 @@
         <div class="container full_width">
             <div class="col-md-12 center_align">
                 <h3>CONTACT</h3>
+            </div>
+            <div class="col-md-3 left_align">
+            </div>
+            <div class="col-md-6 right_align">
+                <form id="contactForm" method="POST">
+                    <input class="email_field" name="text" placeholder="Your name"><br />
+                    <input class="email_field" type="_replyto" placeholder="Your email"><br />
+                    <textarea class="email_field" placeholder="Your message"></textarea><br />
+                    <input type="hidden" name="_subject" value="www.mrbachman.com contact" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <input type="submit" value="Send" class="btn btn-lg">
+                </form>
                <!-- <a href="http://www.facebook.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
                 <a href="http://www.twitter.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
                 <a href="http://www.instagram.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x"></i></span></a>
                 <a href="http://www.youtube.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-youtube-play fa-stack-1x"></i></span></a> -->
+            </div>
+            <div class="col-md-3 left_align">
             </div>
         </div>
     </div>
@@ -365,10 +379,14 @@
 
 
 
+
     /** Document Ready Functions **/
     /********************************************************************/
 
     $(document).ready(function() {
+
+        var contactform =  document.getElementById('contactForm');
+        contactform.setAttribute('action', '//formspree.io/' + 'music' + '@' + 'mrbachman' + '.' + 'com');
 
         // initialize Audio JS
         $(function() {
