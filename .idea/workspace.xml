@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7643f1a9-209c-4f51-ac26-629a2a97eaae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ui.css" afterPath="$PROJECT_DIR$/css/ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wildambition.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2955665">
-              <caret line="402" column="44" selection-start-line="402" selection-start-column="35" selection-end-line="402" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.3140394">
+              <caret line="403" column="29" selection-start-line="403" selection-start-column="29" selection-end-line="403" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#input#3;n#form#0;n#div#2;n#div#0;n#div#3;n#div#1;n#body#0;n#!!top" expanded="true" />
               </folding>
@@ -133,9 +133,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="119" />
-    <option name="y" value="109" />
-    <option name="width" value="1767" />
+    <option name="x" value="1292" />
+    <option name="y" value="214" />
+    <option name="width" value="1453" />
     <option name="height" value="1211" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -579,15 +579,15 @@
       <workItem from="1466136475769" duration="27063000" />
       <workItem from="1466526437267" duration="6000" />
       <workItem from="1466634959297" duration="22572000" />
-      <workItem from="1467237892986" duration="6260000" />
+      <workItem from="1467237892986" duration="6832000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82754000" />
+    <option name="totallyTimeSpent" value="83326000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="119" y="109" width="1767" height="1211" extended-state="0" />
+    <frame x="1292" y="214" width="1453" height="1211" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -600,7 +600,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13043478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15946138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18481244" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -998,8 +998,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2955665">
-          <caret line="402" column="44" selection-start-line="402" selection-start-column="35" selection-end-line="402" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.3140394">
+          <caret line="403" column="29" selection-start-line="403" selection-start-column="29" selection-end-line="403" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#input#3;n#form#0;n#div#2;n#div#0;n#div#3;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>

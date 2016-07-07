@@ -399,8 +399,9 @@
 
             $.ajax({
                 url: '//formspree.io/' + 'music' + '@' + 'mrbachman' + '.' + 'com',
-                method: 'POST',
+                type: 'POST',
                 data: $contactForm.serialize(),
+                cache: false,
                 dataType: 'json',
                 beforeSend: function() {
                     //$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
