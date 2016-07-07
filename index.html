@@ -79,6 +79,7 @@
                 <a href="http://www.facebook.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-facebook fa-lg"></i></a>
                 <a href="http://www.twitter.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-twitter fa-lg"></i></a>
                 <a href="http://www.instagram.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-instagram fa-lg"></i></a>
+                <a href="http://www.soundcloud.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-soundcloud fa-lg"></i></a>
                 <!--<a href="http://www.youtube.com/mrbachmanmusic" target="_blank" class="icon"><i class="fa fa-youtube-play fa-lg"></i></a>-->
                 <!--<a href="#music" class="btn btn-lg scrollto">Listen</a>-->
             </div>
@@ -338,12 +339,13 @@
             </div>
             <div class="col-md-6 right_align">
                 <form id="contactForm" method="POST">
-                    <input class="email_field" name="Name" placeholder="Your name" required><br />
-                    <input class="email_field" type="email" name="_replyto" placeholder="Your email" required><br />
-                    <textarea class="email_field" name="Message" placeholder="Your message" required></textarea><br />
+                    <input id="name" class="email_field" type="name" name="Name" placeholder="Your name" required><br />
+                    <input id="email" class="email_field" type="email" name="_replyto" placeholder="Your email" required><br />
+                    <textarea id="message" class="email_field" type="message" name="Message" placeholder="Your message" required></textarea><br />
                     <input type="hidden" name="_subject" value="From www.mrbachman.com" />
                     <input type="text" name="_gotcha" style="display:none" />
-                    <input type="submit" value="Send" class="btn btn-lg">
+                    <button id="clear" type="button" class="btn btn-md">Clear</button>
+                    <input id="submit" type="submit" value="Send" class="btn btn-md"/>
                 </form>
                <!-- <a href="http://www.facebook.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x"></i></span></a>
                 <a href="http://www.twitter.com/mrbachmanmusic" target="_blank" class="icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-inverse fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x"></i></span></a>
@@ -398,7 +400,7 @@
             $.ajax({
                 url: '//formspree.io/' + 'music' + '@' + 'mrbachman' + '.' + 'com',
                 method: 'POST',
-                data: $(this).serialize(),
+                data: $contactForm.serialize(),
                 dataType: 'json',
                 beforeSend: function() {
                     //$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
@@ -410,18 +412,28 @@
                     setTimeout(function() {
                         //$('.alert--success').remove();
                         $submit.attr('disabled', false).val(defaultSubmitText);
+                        $("#name").val('');
+                        $("#email").val('');
+                        $("#message").val('');
                     }, 5000);
                 },
                 error: function(err) {
                     //$contactForm.find('.alert--loading').hide();
                     //$contactForm.append('<div class="alert alert--error">Ops, there was an error.</div>');
-                    $submit.val('Ops, there was an error.');
+                    $submit.val('Oops, there was an error.');
                     setTimeout(function() {
                         //$('.alert--error').remove();
                         $submit.attr('disabled', false).val(defaultSubmitText);
                     }, 5000);
                 }
             });
+
+        });
+
+        $("#clear").click(function() {
+            $("#name").val('');
+            $("#email").val('');
+            $("#message").val('');
         });
 
         // initialize Audio JS

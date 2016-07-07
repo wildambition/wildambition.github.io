@@ -59,10 +59,10 @@ textarea.email_field {
     height: 15rem !important;
     margin-bottom: 1rem;
 }
-#contactForm input.btn.btn-lg,
-#contactForm input.btn.btn-lg:hover,
-#contactForm input.btn.btn-lg:active,
-#contactForm input.btn.btn-lg:focus {
+#contactForm .btn.btn-md,
+#contactForm .btn.btn-md:hover,
+#contactForm .btn.btn-md:active,
+#contactForm .btn.btn-md:focus {
     background-color: transparent;
     color: #ffffff;
 }
@@ -235,7 +235,7 @@ div.down_arrow {
 .video-container video.fillWidth {
     width: 100%;
 }
-.btn-lg {
+.btn-lg, .btn-md {
     border-radius: 0;
     border: 1px solid #fff;
 }
