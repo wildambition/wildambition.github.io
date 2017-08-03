@@ -243,35 +243,62 @@ div.down_arrow {
     display: none!important;
     -webkit-appearance: none
 }
-
+a.ui-link.track {
+    float: right;
+    text-align: left;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+h6.released {
+  font-style: italic;
+}
+.carousel-control.album .glyphicon-chevron-left,
+.carousel-control.album .glyphicon-chevron-right{
+    top: 20%;
+}
+img.endorse {
+    width: 100px;
+    height: auto;
+    padding: 10px;
+}
 
 .audiojs {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     width: 100%;
-    background-color: #000;
+    background-color: #2d2d2d;
     background-image: none;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -o-box-shadow: none;
     box-shadow: none;
+    display: inline-block;
+    white-space: nowrap;
 }
 .audiojs .play-pause {
     padding-top: 4px;
     padding-bottom: 2px;
     padding-left: 0px;
     padding-right: 4px;
+    border-right: none;
 }
 .audiojs .scrubber {
     border-top: 0px;
-    width: 75%;
+    width: 60%;
 }
 .audiojs .loaded {
-    background-color: RGBA(0, 0, 0, 0.67);
+    background-color: #5a5a5a;
     background-image: none;
 }
 .audiojs .progress {
     background-color: rgb(204, 204, 204);
     background-image: none;
+}
+.audiojs .time {
+    border-left: none;
+    margin: 0;
+    padding: 0px 8px 0px 0px;
+    float: right;
 }
 .audio_wrapper {
     width: 100%;
@@ -349,4 +376,3 @@ div.down_arrow {
         display: none;
     }
 }*/
-
