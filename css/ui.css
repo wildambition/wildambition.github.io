@@ -246,22 +246,26 @@ div.down_arrow {
 a.ui-link.track {
     float: right;
     text-align: left;
-    width: 90%;
+    /*width: 100%;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden;*/
 }
 h6.released {
   font-style: italic;
 }
 .carousel-control.album .glyphicon-chevron-left,
 .carousel-control.album .glyphicon-chevron-right{
-    top: 20%;
+    top: 20px;
 }
 img.endorse {
     width: 100px;
     height: auto;
     padding: 10px;
 }
+/*.col-md-8.audio {
+  padding-left: 0px;
+  padding-right: 0px;
+}*/
 
 .audiojs {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -284,7 +288,7 @@ img.endorse {
 }
 .audiojs .scrubber {
     border-top: 0px;
-    width: 60%;
+    width: 80%;
 }
 .audiojs .loaded {
     background-color: #5a5a5a;
@@ -299,6 +303,7 @@ img.endorse {
     margin: 0;
     padding: 0px 8px 0px 0px;
     float: right;
+    font-size: x-small;
 }
 .audio_wrapper {
     width: 100%;
@@ -307,7 +312,7 @@ img.endorse {
 .audio_wrapper ol {
     padding: 0px;
     margin: 0px;
-    list-style: decimal-leading-zero inside;
+    /*list-style: decimal-leading-zero inside;*/
     color: #ccc;
     width: 100%;
     border-top: none;
@@ -323,6 +328,7 @@ img.endorse {
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
+    display: flex;
 }
 .audio_wrapper ol li a {
     display: block;
