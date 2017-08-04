@@ -394,6 +394,26 @@
 <!-- Audio JS player -->
 <script src="audiojs/audio.min.js"></script>
 
+<script>
+$(document).ready(function() {
+   $("#musicCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#musicCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+});
+
+$(document).ready(function() {
+   $("#photoCarousel").swiperight(function() {
+      $(this).carousel('prev');
+    });
+   $("#photoCarousel").swipeleft(function() {
+      $(this).carousel('next');
+   });
+});
+</script>
+
 <script type="text/javascript">
 
 
