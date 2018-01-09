@@ -34,11 +34,20 @@ h3 {
 .nowrap {
     white-space: nowrap;
 }
+.margin-bottom-huge {
+  margin-bottom: 25px;
+}
+.margin-bottom-minus-navbar {
+  margin-bottom: -51px;
+}
 .album-cover {
     max-width: 250px;
     min-width: 250px;
     margin-bottom: 20px;
     margin-top: 10px;
+}
+.height-500 {
+  height: 500px;
 }
 img.about {
     max-width: 250px;
