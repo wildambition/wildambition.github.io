@@ -247,6 +247,9 @@ div.down_arrow {
 .video-container video.fillWidth {
     width: 100%;
 }
+.youtube-video {
+  width: 100%;
+}
 .btn-lg, .btn-md {
     border-radius: 0;
     border: 1px solid #fff;
