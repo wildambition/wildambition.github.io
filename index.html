@@ -641,26 +641,18 @@ $(document).ready(function() {
             scaleBannerVideoSize('.video-container video');
         });
 
-        var myVideo = document.getElementById('coverVideo');
-
-        if (typeof myVideo.loop == 'boolean') { // loop supported
-            myVideo.loop = true;
-        } else { // loop property not supported
-            myVideo.on('ended', function () {
-                this.currentTime = 0;
-                this.play();
-            }, false);
+        if (document.getElementById('coverVideo') !== null) {
+          var myVideo = document.getElementById('coverVideo');
+          if (typeof myVideo.loop == 'boolean') { // loop supported
+              myVideo.loop = true;
+          } else { // loop property not supported
+              myVideo.on('ended', function () {
+                  this.currentTime = 0;
+                  this.play();
+              }, false);
+          }
+          myVideo.play();
         }
-        myVideo.play();
-
-        //function playVideo(){
-            //myVideo.currentTime = 0.1;
-        //    myVideo.play();
-        //    myVideo.addEventListener("canplay",function() { myVideo.currentTime = 0.1;});
-        //}
-
-        //myVideo.addEventListener("ended", playVideo);
-
     });
 
     /** Reusable Functions **/
@@ -682,7 +674,6 @@ $(document).ready(function() {
         });
 
         scaleBannerVideoSize(element);
-
     }
 
     function scaleBannerVideoSize(element){
